@@ -25,6 +25,11 @@
             padding: 20px;
         }
 
+        .text-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .hero {
             text-align: center;
             padding: 80px 0 60px;
@@ -233,8 +238,10 @@
 
         .permission-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .permission-item {
@@ -351,6 +358,10 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .permission-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .fade-in {
@@ -369,198 +380,213 @@
     <div class="container">
         <header class="hero">
             <div class="hero-content">
-                <div class="app-title-badge">⛪ 스마트 교회 관리 플랫폼</div>
+                <div class="app-title-badge">⛪ 교회 관리, 이제 스마트하게!</div>
+                <div class="problem-highlight" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); padding: 20px; border-radius: 15px; margin: 20px auto; max-width: 600px; border: 1px solid rgba(255,255,255,0.2);">
+                    <p style="font-size: 1.1rem; margin-bottom: 15px; opacity: 0.9;">📝 복잡한 엑셀 관리에 지치셨나요?</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px; opacity: 0.9;">📊 출석부터 헌금까지 따로따로 관리하느라 번거로우신가요?</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 0; opacity: 0.9;">🤝 성도들과의 소통이 어려우신가요?</p>
+                </div>
                 <h1>만나</h1>
                 <p class="subtitle">교회 스마트 관리 앱</p>
-                <p class="description">목회자와 성도가 함께하는 디지털 교회 통합 관리 플랫폼으로<br>효율적인 교회 운영과 편리한 교회 생활을 경험해보세요</p>
+                <p class="description">모든 교회 업무를 하나로 통합! 출석, 헌금, 성도 관리부터 소통까지<br>목회자와 성도가 함께하는 올인원 디지털 교회 플랫폼입니다</p>
             </div>
         </header>
 
         <section class="section fade-in">
-            <h2>🎯 교직자 전용 기능</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>📊 출석 및 통계 관리</h3>
-                    <ul>
-                        <li>실시간 출석 체크: 간편한 터치로 빠른 출석 등록</li>
-                        <li>연도별 출석 현황: 개인별, 부서별 출석 패턴 분석</li>
-                        <li>자동 출결 보고서: 다양한 템플릿으로 보고서 자동 생성</li>
-                        <li>성장률 분석: 주간/월간/연간 교회 성장 트렌드 확인</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>💰 헌금 관리 시스템</h3>
-                    <ul>
-                        <li>헌금 등록: 십일조, 감사헌금, 특별헌금 등 유형별 등록</li>
-                        <li>헌금 통계: 월별/연도별 헌금 현황 및 추이 분석</li>
-                        <li>재정 보고서: 자동화된 헌금 보고서 생성</li>
-                        <li>익명 헌금 처리: 개인정보 보호를 위한 시스템</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>👥 성도 관리</h3>
-                    <ul>
-                        <li>부서별 관리: 유아부부터 장년부까지 맞춤 운영</li>
-                        <li>새신자 등록: 새가족 정보부터 정착 과정까지</li>
-                        <li>심방 관리: 심방 일정 계획 및 방문 기록 보관</li>
-                        <li>성도 프로필: 개인별 상세 정보 및 기록 관리</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>📸 미디어 관리</h3>
-                    <ul>
-                        <li>활동 사진/영상: 부서별 활동 기록 체계적 관리</li>
-                        <li>유튜브 연동: 교회 채널 영상을 앱에서 시청</li>
-                        <li>모바일 초대장: 전도용 교회 초대장 제작</li>
-                        <li>디지털 주보: 편리한 주보 배포</li>
-                    </ul>
+            <div class="text-container">
+                <h2>🎯 교직자 전용 기능</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>📊 출석 및 통계 관리</h3>
+                        <ul>
+                            <li>실시간 출석 체크: 간편한 터치로 빠른 출석 등록</li>
+                            <li>연도별 출석 현황: 개인별, 부서별 출석 패턴 분석</li>
+                            <li>자동 출결 보고서: 다양한 템플릿으로 보고서 자동 생성</li>
+                            <li>성장률 분석: 주간/월간/연간 교회 성장 트렌드 확인</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💰 헌금 관리 시스템</h3>
+                        <ul>
+                            <li>헌금 등록: 십일조, 감사헌금, 특별헌금 등 유형별 등록</li>
+                            <li>헌금 통계: 월별/연도별 헌금 현황 및 추이 분석</li>
+                            <li>재정 보고서: 자동화된 헌금 보고서 생성</li>
+                            <li>익명 헌금 처리: 개인정보 보호를 위한 시스템</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>👥 성도 관리</h3>
+                        <ul>
+                            <li>부서별 관리: 유아부부터 장년부까지 맞춤 운영</li>
+                            <li>새신자 등록: 새가족 정보부터 정착 과정까지</li>
+                            <li>심방 관리: 심방 일정 계획 및 방문 기록 보관</li>
+                            <li>성도 프로필: 개인별 상세 정보 및 기록 관리</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📸 미디어 관리</h3>
+                        <ul>
+                            <li>활동 사진/영상: 부서별 활동 기록 체계적 관리</li>
+                            <li>유튜브 연동: 교회 채널 영상을 앱에서 시청</li>
+                            <li>모바일 초대장: 전도용 교회 초대장 제작</li>
+                            <li>디지털 주보: 편리한 주보 배포</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section permissions fade-in">
-            <h2>🔐 권한 관리 시스템</h2>
-            <div class="permission-grid">
-                <div class="permission-item">
-                    <h4>👑 최고 관리자</h4>
-                    <p>담임목사, 부목사 - 모든 기능 접근 가능</p>
-                </div>
-                <div class="permission-item">
-                    <h4>👥 부서 관리자</h4>
-                    <p>각 부서 교역자, 부장 - 담당 부서 관련 기능</p>
-                </div>
-                <div class="permission-item">
-                    <h4>💰 재정 관리자</h4>
-                    <p>헌금 관리 및 재정 관련 기능 전용 접근</p>
-                </div>
-                <div class="permission-item">
-                    <h4>🙏 일반 성도</h4>
-                    <p>개인 신앙생활 및 교회 참여 기능 이용</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section fade-in">
-            <h2>📱 주요 기능 스크린샷</h2>
-            <div class="screenshots">
-                <div class="screenshot-card">
-                    <img src="screenshot1.jpeg" alt="헌금 관리 화면">
-                    <h4>💰 헌금 관리</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot2.jpeg" alt="출석 관리 화면">
-                    <h4>📊 출석 관리</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot3.jpeg" alt="성도 관리 화면1">
-                    <h4>👥 성도 관리</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot4.jpeg" alt="성도 관리 화면2">
-                    <h4>👥 부서별 관리</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot5.jpeg" alt="출석 확인 화면">
-                    <h4>✅ 출석 확인</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot6.jpeg" alt="모바일 초청장">
-                    <h4>💌 모바일 초청장</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot7.jpeg" alt="헌금 분석 통계1">
-                    <h4>📊 헌금 통계 분석</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot8.jpeg" alt="헌금 분석 통계2">
-                    <h4>📈 월별 헌금 현황</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot9.jpeg" alt="헌금 종류별 통계">
-                    <h4>📈 헌금 종류별 분석</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot10.jpeg" alt="새신자 목록">
-                    <h4>👥 새신자 관리</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot11.jpeg" alt="교회 전체 통계1">
-                    <h4>📊 교회 현황 분석</h4>
-                </div>
-                <div class="screenshot-card">
-                    <img src="screenshot12.jpeg" alt="교회 전체 통계2">
-                    <h4>📊 교회 성장 통계</h4>
+            <div class="text-container">
+                <h2>🔐 권한 관리 시스템</h2>
+                <div class="permission-grid">
+                    <div class="permission-item">
+                        <h4>👑 최고 관리자</h4>
+                        <p>담임목사, 부목사 - 모든 기능 접근 가능</p>
+                    </div>
+                    <div class="permission-item">
+                        <h4>👥 부서 관리자</h4>
+                        <p>각 부서 교역자, 부장 - 담당 부서 관련 기능</p>
+                    </div>
+                    <div class="permission-item">
+                        <h4>💰 재정 관리자</h4>
+                        <p>헌금 관리 및 재정 관련 기능 전용 접근</p>
+                    </div>
+                    <div class="permission-item">
+                        <h4>🙏 일반 성도</h4>
+                        <p>개인 신앙생활 및 교회 참여 기능 이용</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section fade-in">
-            <h2>🙏 성도 이용 기능</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>📖 개인 신앙생활</h3>
-                    <ul>
-                        <li>말씀 묵상: 일일 말씀과 개인 묵상 기록</li>
-                        <li>설교노트: 주일 설교 은혜와 깨달음 기록</li>
-                        <li>개인 기도 요청: 개인의 기도 제목 등록 및 관리</li>
-                        <li>개인 헌금 내역: 본인의 헌금 기록 확인 및 관리</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>🎉 교회 생활 참여</h3>
-                    <ul>
-                        <li>실시간 소식: 교회 공지사항과 중요한 알림 확인</li>
-                        <li>행사 참여: 교회에서 열리는 다양한 행사 참여</li>
-                        <li>모바일 주보: 언제 어디서나 주보 내용 확인</li>
-                        <li>교회 영상 시청: 유튜브 연동으로 설교 영상 시청</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>💭 소통 및 참여</h3>
-                    <ul>
-                        <li>심방 요청: 필요시 목회자에게 심방 요청</li>
-                        <li>중보기도 요청: 공동체와 기도 제목 나눔</li>
-                        <li>교회 개선 제안: 교회 발전을 위한 의견 제시</li>
-                        <li>가족 연동: 가족 구성원의 교회 활동 통합 관리</li>
-                    </ul>
+            <div class="text-container">
+                <h2>📱 주요 기능 스크린샷</h2>
+                <div class="screenshots">
+                    <div class="screenshot-card">
+                        <img src="screenshot1.jpeg" alt="헌금 관리 화면">
+                        <h4>💰 헌금 관리</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot2.jpeg" alt="출석 관리 화면">
+                        <h4>📊 출석 관리</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot3.jpeg" alt="성도 관리 화면1">
+                        <h4>👥 성도 관리</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot4.jpeg" alt="성도 관리 화면2">
+                        <h4>👥 부서별 관리</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot5.jpeg" alt="출석 확인 화면">
+                        <h4>✅ 출석 확인</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot6.jpeg" alt="모바일 초청장">
+                        <h4>💌 모바일 초청장</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot7.jpeg" alt="헌금 분석 통계1">
+                        <h4>📊 헌금 통계 분석</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot8.jpeg" alt="헌금 분석 통계2">
+                        <h4>📈 월별 헌금 현황</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot9.jpeg" alt="헌금 종류별 통계">
+                        <h4>📈 헌금 종류별 분석</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot10.jpeg" alt="새신자 목록">
+                        <h4>👥 새신자 관리</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot11.jpeg" alt="교회 전체 통계1">
+                        <h4>📊 교회 현황 분석</h4>
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="screenshot12.jpeg" alt="교회 전체 통계2">
+                        <h4>📊 교회 성장 통계</h4>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section fade-in">
-            <h2>✨ 주요 특징</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🎯 역할별 최적화</h3>
-                    <ul>
-                        <li>교직자와 성도 각각의 필요에 맞는 차별화된 기능</li>
-                        <li>최적의 사용자 경험 제공</li>
-                        <li>직관적인 인터페이스 설계</li>
-                    </ul>
+            <div class="text-container">
+                <h2>🙏 성도 이용 기능</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>📖 개인 신앙생활</h3>
+                        <ul>
+                            <li>말씀 묵상: 일일 말씀과 개인 묵상 기록</li>
+                            <li>설교노트: 주일 설교 은혜와 깨달음 기록</li>
+                            <li>개인 기도 요청: 개인의 기도 제목 등록 및 관리</li>
+                            <li>개인 헌금 내역: 본인의 헌금 기록 확인 및 관리</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎉 교회 생활 참여</h3>
+                        <ul>
+                            <li>실시간 소식: 교회 공지사항과 중요한 알림 확인</li>
+                            <li>행사 참여: 교회에서 열리는 다양한 행사 참여</li>
+                            <li>모바일 주보: 언제 어디서나 주보 내용 확인</li>
+                            <li>교회 영상 시청: 유튜브 연동으로 설교 영상 시청</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💭 소통 및 참여</h3>
+                        <ul>
+                            <li>심방 요청: 필요시 목회자에게 심방 요청</li>
+                            <li>중보기도 요청: 공동체와 기도 제목 나눔</li>
+                            <li>교회 개선 제안: 교회 발전을 위한 의견 제시</li>
+                            <li>가족 연동: 가족 구성원의 교회 활동 통합 관리</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>📊 데이터 기반 운영</h3>
-                    <ul>
-                        <li>체계적인 통계와 분석 제공</li>
-                        <li>교회의 성장과 발전 방향 파악</li>
-                        <li>실시간 데이터 동기화</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>🔒 안전한 정보 보호</h3>
-                    <ul>
-                        <li>철저한 권한 관리 시스템</li>
-                        <li>개인정보와 교회 데이터 보호</li>
-                        <li>특히 헌금 정보 안전 관리</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>💎 투명한 재정 관리</h3>
-                    <ul>
-                        <li>헌금 관리 기능으로 투명성 증대</li>
-                        <li>성도들의 신뢰 증진</li>
-                        <li>자동화된 보고서 시스템</li>
-                    </ul>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="text-container">
+                <h2>✨ 주요 특징</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🎯 역할별 최적화</h3>
+                        <ul>
+                            <li>교직자와 성도 각각의 필요에 맞는 차별화된 기능</li>
+                            <li>최적의 사용자 경험 제공</li>
+                            <li>직관적인 인터페이스 설계</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📊 데이터 기반 운영</h3>
+                        <ul>
+                            <li>체계적인 통계와 분석 제공</li>
+                            <li>교회의 성장과 발전 방향 파악</li>
+                            <li>실시간 데이터 동기화</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔒 안전한 정보 보호</h3>
+                        <ul>
+                            <li>철저한 권한 관리 시스템</li>
+                            <li>개인정보와 교회 데이터 보호</li>
+                            <li>특히 헌금 정보 안전 관리</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💎 투명한 재정 관리</h3>
+                        <ul>
+                            <li>헌금 관리 기능으로 투명성 증대</li>
+                            <li>성도들의 신뢰 증진</li>
+                            <li>자동화된 보고서 시스템</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -576,53 +602,57 @@
         </section>
 
         <section class="section fade-in">
-            <h2>🏆 이런 분들께 추천합니다</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>✅ 교직자분들</h3>
-                    <ul>
-                        <li>체계적인 교회 관리를 원하는 목회자</li>
-                        <li>성도들과의 소통을 강화하고 싶은 교역자</li>
-                        <li>데이터 기반으로 교회를 운영하고 싶은 분들</li>
-                        <li>투명하고 체계적인 재정 관리를 원하는 분들</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>✅ 성도분들</h3>
-                    <ul>
-                        <li>교회 소식을 빠르게 확인하고 싶은 분들</li>
-                        <li>체계적인 신앙생활을 원하는 분들</li>
-                        <li>교회 공동체와 더 깊이 소통하고 싶은 분들</li>
-                        <li>개인 헌금 내역을 체계적으로 관리하고 싶은 분들</li>
-                    </ul>
+            <div class="text-container">
+                <h2>🏆 이런 분들께 추천합니다</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>✅ 교직자분들</h3>
+                        <ul>
+                            <li>체계적인 교회 관리를 원하는 목회자</li>
+                            <li>성도들과의 소통을 강화하고 싶은 교역자</li>
+                            <li>데이터 기반으로 교회를 운영하고 싶은 분들</li>
+                            <li>투명하고 체계적인 재정 관리를 원하는 분들</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>✅ 성도분들</h3>
+                        <ul>
+                            <li>교회 소식을 빠르게 확인하고 싶은 분들</li>
+                            <li>체계적인 신앙생활을 원하는 분들</li>
+                            <li>교회 공동체와 더 깊이 소통하고 싶은 분들</li>
+                            <li>개인 헌금 내역을 체계적으로 관리하고 싶은 분들</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <footer class="section fade-in">
-            <h2>📞 지원 및 문의</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>🛠️ 지원 서비스</h3>
-                    <ul>
-                        <li>상세한 사용법 가이드 제공</li>
-                        <li>신속한 고객 지원 서비스</li>
-                        <li>정기적인 업데이트와 기능 개선</li>
-                        <li>권한 설정 및 보안 관련 전문 지원</li>
-                    </ul>
+            <div class="text-container">
+                <h2>📞 지원 및 문의</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🛠️ 지원 서비스</h3>
+                        <ul>
+                            <li>상세한 사용법 가이드 제공</li>
+                            <li>신속한 고객 지원 서비스</li>
+                            <li>정기적인 업데이트와 기능 개선</li>
+                            <li>권한 설정 및 보안 관련 전문 지원</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💙 함께 만들어가는 공동체</h3>
+                        <ul>
+                            <li>함께 성장하는 교회</li>
+                            <li>함께 만들어가는 공동체</li>
+                            <li>더 건강한 교회 문화 조성</li>
+                            <li>디지털 시대의 새로운 교회 모델</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <h3>💙 함께 만들어가는 공동체</h3>
-                    <ul>
-                        <li>함께 성장하는 교회</li>
-                        <li>함께 만들어가는 공동체</li>
-                        <li>더 건강한 교회 문화 조성</li>
-                        <li>디지털 시대의 새로운 교회 모델</li>
-                    </ul>
+                <div style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #5a67d8;">
+                    <p><strong>함께 성장하는 교회, 함께 만들어가는 공동체를 위한 첫걸음을 시작해보세요!</strong></p>
                 </div>
-            </div>
-            <div style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #5a67d8;">
-                <p><strong>함께 성장하는 교회, 함께 만들어가는 공동체를 위한 첫걸음을 시작해보세요!</strong></p>
             </div>
         </footer>
     </div>
